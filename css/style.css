@@ -1,0 +1,40 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  text-indent: 25px;
+}
+
+.navbar_custom {
+  background: #000000;
+  background: -moz-linear-gradient(left, #000000 0%, #7db9e8 100%);
+  background: -webkit-linear-gradient(left, #000000 0%, #7db9e8 100%);
+  background: linear-gradient(to right, #000000 0%, #7db9e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#7db9e8',GradientType=1 );
+}
+
+.nav_conteiner {
+  padding: 0 50px;
+}
+
+.btn_exit {
+  padding: 5px 30px;
+}
+
+.nav-table {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.joke_table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.joke_img {
+  border-radius: 50px;
+}
