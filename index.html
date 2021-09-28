@@ -19,10 +19,18 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_custom">
-        <div class="container-fluid nav_conteiner">
-          <a class="navbar-brand navbar_icon" href="#">
-            <img src="/img/Cikada.jpg" alt="logo" width="100" height="60" />
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid nav_container">
+          <a class="navbar-brand text-white" href="#">
+            <img
+              src="/img/cikada-logo.svg"
+              width="60"
+              height="60"
+              class="d-inline-block align-center nav_logo"
+              alt=""
+              loading="lazy"
+            />
+            Анекдотиха
           </a>
           <button
             class="navbar-toggler"
@@ -42,15 +50,15 @@
                   class="nav-link active text-white"
                   aria-current="page"
                   href="#"
-                  >К анекдотам</a
+                  >Простенькие</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Приколы с картинками</a>
+                <a class="nav-link text-white" href="#">Поинтересней</a>
               </li>
             </ul>
             <form class="d-flex">
-              <button class="btn btn-outline-success btn_exit" type="submit">
+              <button class="btn btn-outline-danger btn_exit" type="submit">
                 Выйти
               </button>
             </form>
@@ -60,68 +68,100 @@
     </header>
     <section>
       <div class="container">
-        <h1 class="text-center">Анекдоты от Аделича</h1>
         <div class="row">
-          <div class="col-xl-6 col-md-6 col-sm-12 mt-5 align-self-start">
-            <h3 class="text-center">Прикол#1</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-              quam odit debitis consequatur natus molestias fugiat modi, sunt
-              ratione id possimus numquam eos nobis quibusdam ab, a placeat
-              sapiente aspernatur fuga excepturi. Eligendi, quae odio sequi,
-              doloribus voluptates iste nam, rerum facilis eius et iure nulla.
-              Dolorem adipisci doloribus, quis explicabo a mollitia alias ex
-              fuga! Quos possimus deleniti error iste, laudantium sequi
-              cupiditate tempora ipsam pariatur suscipit, reprehenderit ipsum
-              voluptate placeat. Mollitia deleniti necessitatibus repellendus
-              harum nostrum. Ut est quia provident vitae animi sed cumque saepe
-              totam! Facilis ipsam sint assumenda beatae rem est exercitationem
-              eligendi ut sapiente repudiandae, quam voluptas veniam obcaecati
-              nam, blanditiis, necessitatibus sit deleniti officiis laudantium
-              nobis soluta iusto officia. Recusandae rerum atque quos porro
-              assumenda quis iure culpa aliquid qui eum dicta harum consectetur
-              eaque, repudiandae suscipit voluptates illum sequi ab repellat!
-              Quia veritatis ipsum veniam ipsam distinctio magni repudiandae
-              enim fugit culpa vel.
+          <div class="col-12 mt-5">
+            <div class="alert alert-success mb-2" role="alert">
+              <h4 class="alert-heading">Внимание!</h4>
+              <p>
+                Мы не несем никакой ответственности касательно информации,
+                размещенной на данном сайте. Все имена и события в произведении
+                вымышленны, любые совпадения с реальными людьми и событиями
+                чистая случайность.
+              </p>
+              <hr />
+              <p class="mb-0">Берегите себя!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 mb-6">
+          <div class="col-xl-10 col-sm-12">
+            <h2>Про жену и кума</h2>
+          </div>
+          <d iv class="col-xl-2 col-sm-12">
+            <h4><strong>#анекдоты</strong></h4>
+          </d>
+          <div class="col-xl-8 col-sm-12">
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem veritatis ipsa quis consectetur cum ad tenetur,
+              modi odit. Temporibus, eveniet quae aliquid ipsum cum eum culpa
+              aperiam molestias dolor, explicabo similique repudiandae numquam
+              veritatis quas! Blanditiis soluta laboriosam ratione, ipsam
+              impedit nobis voluptate magnam ut beatae doloribus tempore
+              deserunt iure?
             </p>
           </div>
-          <div class="col-xl-6 col-md-6 col-sm-12 mt-5 joke_table">
-            <h3>Параметры</h3>
-            <img
-              src="./img/joke2.jpg"
-              class="img-fluid joke_img"
-              width="300"
-              height="350"
-              alt="joke2"
-            />
-            <p>Тут будут параметры</p>
+          <div class="col-xl-4 col-sm-12 contacts_block">
+            <div>
+              <p>
+                Имя: тут будет работать JS<br />
+                Город: тут будет работать JS<br />
+                Email: тут будет работать JS<br />
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-success btn_contact">Связаться</button>
+            </div>
           </div>
-          <div class="col-xl-6 col-md-6 col-sm-12 mt-5 align-self-start">
-            <h3 class="text-center">Параметры</h3>
-            <p class="text-center">Тут будут параметры</p>
-          </div>
-          <div class="col-xl-6 col-md-6 col-sm-12 mt-5">
-            <h3 class="text-center">Прикол#1</h3>
+          <div class="col-xl-8 col-sm-12 info-block">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
-              laboriosam quisquam dolorum enim at nisi, est illum hic labore
-              officia exercitationem assumenda dicta commodi necessitatibus
-              architecto itaque consequatur tenetur quasi nobis atque quaerat.
-              Odio facere similique id reiciendis, harum eius ducimus eos, ipsum
-              quod excepturi, soluta ex nam maxime explicabo distinctio
-              consectetur possimus. Nulla vero animi commodi ipsum magnam natus
-              pariatur suscipit placeat. Hic quod ex sunt omnis consequatur odio
-              aperiam distinctio autem rerum labore veniam tenetur minima
-              deleniti, eaque facere accusamus vel, tempora ipsam quisquam
-              libero veritatis corrupti saepe perspiciatis at! Et adipisci vitae
-              blanditiis? Commodi suscipit possimus eveniet labore repellendus
-              tenetur ipsa maiores dolorem. Quod expedita nihil repellat maxime
-              consequuntur quos explicabo minus eveniet provident dolorum,
-              laboriosam unde nulla magnam delectus cum id, et necessitatibus
-              eius ratione? Voluptates animi tempora, culpa enim quos mollitia
-              architecto, cumque exercitationem similique modi aperiam provident
-              necessitatibus incidunt quas repellendus nobis quasi soluta.
+              Автор:<br />
+              Дата размещения:<br />
             </p>
+          </div>
+          <div class="col-xl-4 col-sm-12 info-block">
+            <button class="btn btn-outline-info btn_contact">Об авторе</button>
+          </div>
+        </div>
+        <div class="row mt-5 mb-5">
+          <div class="col-xl-10 col-sm-12">
+            <h2>Японские часы</h2>
+          </div>
+          <d iv class="col-xl-2 col-sm-12">
+            <h4><strong>#анекдоты</strong></h4>
+          </d>
+          <div class="col-xl-8 col-sm-12">
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem veritatis ipsa quis consectetur cum ad tenetur,
+              modi odit. Temporibus, eveniet quae aliquid ipsum cum eum culpa
+              aperiam molestias dolor, explicabo similique repudiandae numquam
+              veritatis quas! Blanditiis soluta laboriosam ratione, ipsam
+              impedit nobis voluptate magnam ut beatae doloribus tempore
+              deserunt iure?
+            </p>
+          </div>
+          <div class="col-xl-4 col-sm-12 contacts_block">
+            <div>
+              <p>
+                Имя: тут будет работать JS<br />
+                Город: тут будет работать JS<br />
+                Email: тут будет работать JS<br />
+              </p>
+            </div>
+            <div>
+              <button class="btn btn-success btn_contact">Связаться</button>
+            </div>
+          </div>
+          <div class="col-xl-8 col-sm-12 info-block">
+            <p>
+              Автор:<br />
+              Дата размещения:<br />
+            </p>
+          </div>
+          <div class="col-xl-4 col-sm-12 info-block">
+            <button class="btn btn-outline-info btn_contact">Об авторе</button>
           </div>
         </div>
       </div>
