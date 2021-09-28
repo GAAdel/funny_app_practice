@@ -81,23 +81,23 @@
             </div>
           </div>
         </div>
-
-        <div class="row mt-5 mb-6">
-          <div class="col-xl-10 col-sm-12">
-            <h2>Про жену и кума</h2>
-          </div>
-          <d iv class="col-xl-2 col-sm-12">
-            <h4><strong>#анекдоты</strong></h4>
-          </d>
+        
+        <?php
+            $mysql = new mysqli("localhost", "root", "", "funny_app");
+            $mysql->query("SET NAMES 'utf8'");
+            $result = $mysql->query("SELECT * FROM `posts`");
+            while($row =  $result->fetch_assoc()){
+        ?>
+          <div class="row mt-5 mb-6">
+            <div class="col-xl-10 col-sm-12">
+              <h2><?php echo $row['title'];?></h2>
+            </div>
+            <div class="col-xl-2 col-sm-12">
+              <h4><strong>#анекдоты</strong></h4>
+            </div>
           <div class="col-xl-8 col-sm-12">
             <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem veritatis ipsa quis consectetur cum ad tenetur,
-              modi odit. Temporibus, eveniet quae aliquid ipsum cum eum culpa
-              aperiam molestias dolor, explicabo similique repudiandae numquam
-              veritatis quas! Blanditiis soluta laboriosam ratione, ipsam
-              impedit nobis voluptate magnam ut beatae doloribus tempore
-              deserunt iure?
+                <?php echo $row['text'];?>
             </p>
           </div>
           <div class="col-xl-4 col-sm-12 contacts_block">
@@ -114,54 +114,19 @@
           </div>
           <div class="col-xl-8 col-sm-12 info-block">
             <p>
-              Автор:<br />
-              Дата размещения:<br />
+              Автор: <?php echo $row['author_id'];?><br />
+              Дата размещения: <?php echo $row['date'];?><br />
             </p>
           </div>
           <div class="col-xl-4 col-sm-12 info-block">
             <button class="btn btn-outline-info btn_contact">Об авторе</button>
           </div>
         </div>
-        <div class="row mt-5 mb-5">
-          <div class="col-xl-10 col-sm-12">
-            <h2>Японские часы</h2>
-          </div>
-          <d iv class="col-xl-2 col-sm-12">
-            <h4><strong>#анекдоты</strong></h4>
-          </d>
-          <div class="col-xl-8 col-sm-12">
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem veritatis ipsa quis consectetur cum ad tenetur,
-              modi odit. Temporibus, eveniet quae aliquid ipsum cum eum culpa
-              aperiam molestias dolor, explicabo similique repudiandae numquam
-              veritatis quas! Blanditiis soluta laboriosam ratione, ipsam
-              impedit nobis voluptate magnam ut beatae doloribus tempore
-              deserunt iure?
-            </p>
-          </div>
-          <div class="col-xl-4 col-sm-12 contacts_block">
-            <div>
-              <p>
-                Имя: тут будет работать JS<br />
-                Город: тут будет работать JS<br />
-                Email: тут будет работать JS<br />
-              </p>
-            </div>
-            <div>
-              <button class="btn btn-success btn_contact">Связаться</button>
-            </div>
-          </div>
-          <div class="col-xl-8 col-sm-12 info-block">
-            <p>
-              Автор:<br />
-              Дата размещения:<br />
-            </p>
-          </div>
-          <div class="col-xl-4 col-sm-12 info-block">
-            <button class="btn btn-outline-info btn_contact">Об авторе</button>
-          </div>
-        </div>
+        
+        <?php
+            };
+            $mysql->close();
+        ?>
       </div>
     </section>
     <footer></footer>
