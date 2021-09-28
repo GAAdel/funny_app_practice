@@ -7,6 +7,21 @@ body {
   background-color: rgba(238, 238, 238, 1);
 }
 
+.reg_btn {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn_link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn_link:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .nav_container {
   padding: 0 50px;
 }

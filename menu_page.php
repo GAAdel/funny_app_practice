@@ -23,7 +23,7 @@
         <div class="container-fluid nav_container">
           <a class="navbar-brand text-white" href="#">
             <img
-              src="/img/cikada-logo.svg"
+              src="./img/cikada-logo.svg"
               width="60"
               height="60"
               class="d-inline-block align-center nav_logo"
@@ -58,9 +58,7 @@
               </li>
             </ul>
             <form class="d-flex">
-              <button class="btn btn-outline-danger btn_exit" type="submit">
-                Выйти
-              </button>
+              <button class="btn btn-outline-danger btn_exit" type="submit"><a href="index.php" class="btn_link">Выйти</a></button>
             </form>
           </div>
         </div>
